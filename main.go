@@ -9,5 +9,4 @@ import (
 func main() {
 	fmt.Println("App started ...")
 	app.Init()
-	defer fmt.Printf("App terminated...")
 }
