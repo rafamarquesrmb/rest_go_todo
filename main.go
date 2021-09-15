@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	app "github.com/rafamarquesrmb/rest_go_todo/src"
+	"github.com/rafamarquesrmb/rest_go_todo/src"
 )
 
 func main() {
 	fmt.Println("App started ...")
-	app.Init()
+	src.Init()
 }

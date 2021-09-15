@@ -7,9 +7,10 @@ import (
 )
 
 func Init() {
+	database.StartDB()
+
 	port := ":8000"
 	router := routes.ConfigRoutes()
 	server.ServerRun(port, router)
-	database.StartDB()
 
 }

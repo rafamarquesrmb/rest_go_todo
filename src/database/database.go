@@ -15,9 +15,7 @@ var db *gorm.DB
 
 func StartDB() {
 
-	database, err := gorm.Open(sqlite.Open("gotodo.db"), &gorm.Config{
-		DisableForeignKeyConstraintWhenMigrating: true,
-	})
+	database, err := gorm.Open(sqlite.Open("gotodo.db"), &gorm.Config{})
 
 	if err != nil {
 		log.Fatal("error: ", err)
